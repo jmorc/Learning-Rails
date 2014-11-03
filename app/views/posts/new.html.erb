@@ -1,0 +1,32 @@
+<h1>New Post</h1>
+
+<form action='<%= posts_url %>' method='POST'>
+  <input type='hidden'
+         name='authenticity_token'
+         value='<%= form_authenticity_token%>' >
+
+  <label for='title'>Title</label>
+  <input type='text'
+         name='post[title]'
+         id='title'
+         value='<%=@post.title%>'><br>
+
+  Forum<br>
+
+   <% all_subs.each do |sub| %>
+   <input type="checkbox"
+          name="post[sub_ids][]"
+          id="<%= sub.title %>" value="<%= sub.id %> ">
+   <label for="<%= sub.title %>"><%= sub.title%></label><br>
+   <% end %>
+
+  <label for='body'>Content</label><br>
+  <textarea
+         name='post[body]'
+         id='body'> <%=@post.body%> </textarea><br>
+
+
+
+
+  <input type='submit' value='Create Posty Post'>
+</form>

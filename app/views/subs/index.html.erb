@@ -1,0 +1,8 @@
+<h3>All the subs!</h3>
+<ol>
+  <% @subs.each do |sub| %>
+    <li><%= link_to "#{sub.title}: #{sub.description}", sub_url(sub) %></li>
+  <% end %>
+</ol>
+
+<%= link_to "Create a Forum", new_sub_url %>
