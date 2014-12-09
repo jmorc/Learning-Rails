@@ -6,16 +6,10 @@ require 'active_support/inflector'
 
 class SQLObject
   def self.columns
-    query = DBConnection::execute2(<<-SQL)
+    column_query = DBConnection::execute2(<<-SQL)
       SELECT * FROM #{self.table_name}
     SQL
-  
-    symbols = []
-    query.first.each do |el|
-      symbols << el.to_sym
-    end
-
-    symbols
+    symbols = column_query.first.map { |el| el.to_sym }
   end
 
   def self.finalize!
@@ -23,16 +17,9 @@ class SQLObject
 
     cols.each do |col|
       setter_name = col.to_s + '='
-
-      define_method(col) do
-        self.attributes[col]
-      end
-      
-      define_method(setter_name) do |arg|
-        self.attributes[col] = arg 
-      end
-    end
-  
+      define_method(col) { self.attributes[col] }
+      define_method(setter_name) { |arg| self.attributes[col] = arg } 
+    end 
   end
 
   def self.table_name=(table_name)
@@ -48,22 +35,11 @@ class SQLObject
     SELECT *
     FROM "#{self.table_name}"
     SQL
- 
-    my_objects = []
-    query.each do |q|
-      my_objects << self.new(q)
-    end
-    
-    my_objects
+    retrieved_data_objects = query.map { |q| self.new(q) }  
   end
 
   def self.parse_all(results)
-    my_objects =[]
-    results.each do |result|
-      my_objects << self.new(result)
-    end
-    
-    my_objects
+    results.map { |result| self.new(result) }
   end
 
   def self.find(id)
@@ -74,7 +50,7 @@ class SQLObject
     SQL
     found_obj = self.new(query.first)
     
-    found_obj
+    # found_obj
   end
 
   def initialize(params = {})
@@ -83,18 +59,14 @@ class SQLObject
     params.each do |col, val|
       unless  legit_cols.include?(col.to_sym)
         raise "unknown attribute '#{col}'"
-      end
-      
-   method = col.to_s + '='
-   method = method.to_sym
-   self.send(method, val) 
-   
+      end  
+      setter_method = col.to_s + '='
+      self.send(setter_method.to_sym, val) 
     end
   end
 
   def attributes
     @attributes ||= {}
-  
   end
 
   def attribute_values
@@ -112,24 +84,35 @@ class SQLObject
     col_names = cols.join(", ")
     question_marks = ["?"] * cols.count
     question_marks = question_marks.join(', ')
-    
-    my_attributes = attribute_values
-    # p my_attributes
-    p self.class.table_name
-    query = DBConnection.execute(<<-SQL, *my_attributes )
+    attribute_vals = attribute_values
+  
+    DBConnection.execute(<<-SQL, *attribute_vals )
     INSERT INTO
-      "#{self.class.table_name}" (#{col_names})
+      #{self.class.table_name} (#{col_names})
     VALUES
-      (?, ?, ?)
+      (#{question_marks})
       SQL
-   
+    
+     self.id = DBConnection.last_insert_row_id
   end
 
   def update
-    # ...
+    cols = self.class.columns
+    set_text = cols.map { |col|  "#{col} = ?" }.join(", ")
+    attribute_vals_with_id = attribute_values + [self.id]
+    
+    DBConnection.execute(<<-SQL, *attribute_vals_with_id )
+    UPDATE
+      #{self.class.table_name} 
+    SET
+      #{set_text} 
+    WHERE
+      id = ?
+    SQL
   end
 
   def save
-    # ...
+    self.id.nil? ? insert : update
   end
+  
 end
