@@ -1,0 +1,1333 @@
+
+
+Started GET "/users.html" for 127.0.0.1 at 2014-10-27 13:34:57 -0700
+
+AbstractController::ActionNotFound (The action 'index' could not be found for UsersController):
+  actionpack (4.1.1) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.1) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (2.8ms)
+
+
+Started GET "/users.html" for 127.0.0.1 at 2014-10-27 13:36:24 -0700
+Processing by UsersController#index as HTML
+Completed 500 Internal Server Error in 74ms
+
+ActionView::MissingTemplate (Missing template users/index, application/index with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/appacademy/WeekFourDayOne/app/views"
+):
+  actionview (4.1.1) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.1.1) lib/action_view/lookup_context.rb:124:in `find'
+  actionview (4.1.1) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:41:in `determine_template'
+  actionview (4.1.1) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.1) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.1) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/1.9.1/benchmark.rb:295:in `realtime'
+  activesupport (4.1.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.1) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.1) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.1) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (0.7ms)
+
+
+Started GET "/users.html" for 127.0.0.1 at 2014-10-27 13:37:18 -0700
+Processing by UsersController#index as HTML
+  Rendered text template (0.0ms)
+Completed 200 OK in 51ms (Views: 50.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users.html/1" for 127.0.0.1 at 2014-10-27 13:39:27 -0700
+
+ActionController::RoutingError (No route matches [GET] "/users.html/1"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.8ms)
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (32.8ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at 2014-10-27 13:39:53 -0700
+
+AbstractController::ActionNotFound (The action 'show' could not be found for UsersController):
+  actionpack (4.1.1) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.1) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-10-27 13:43:18 -0700
+Processing by UsersController#index as XML
+  Rendered text template (0.0ms)
+Completed 200 OK in 29ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/1.json?some_category%5Ba_key%5D=another%20value&some_category%5Ba_second_key%5D=yet%20another%20value&some_category%5Binner_inner_hash%5D%5Bkey%5D=value&something_else=aaahhhhh" for 127.0.0.1 at 2014-10-27 13:44:33 -0700
+
+AbstractController::ActionNotFound (The action 'show' could not be found for UsersController):
+  actionpack (4.1.1) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.1) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (2.0ms)
+
+
+Started POST "/users?some_category%5Ba_key%5D=another%20value&some_category%5Ba_second_key%5D=yet%20another%20value&some_category%5Binner_inner_hash%5D%5Bkey%5D=value&something_else=aaahhhhh" for 127.0.0.1 at 2014-10-27 13:49:17 -0700
+
+AbstractController::ActionNotFound (The action 'create' could not be found for UsersController):
+  actionpack (4.1.1) lib/abstract_controller/base.rb:131:in `process'
+  actionview (4.1.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.1) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.1) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.1) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (2.5ms)
+
+
+Started POST "/users?some_category%5Ba_key%5D=another%20value&some_category%5Ba_second_key%5D=yet%20another%20value&some_category%5Binner_inner_hash%5D%5Bkey%5D=value&something_else=aaahhhhh" for 127.0.0.1 at 2014-10-27 13:53:59 -0700
+Processing by UsersController#create as XML
+  Parameters: {"some_category"=>{"a_key"=>"another value", "a_second_key"=>"yet another value", "inner_inner_hash"=>{"key"=>"value"}}, "something_else"=>"aaahhhhh"}
+Completed 200 OK in 25ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users?some_category%5Ba_key%5D=another%20value&some_category%5Ba_second_key%5D=yet%20another%20value&some_category%5Binner_inner_hash%5D%5Bkey%5D=value&something_else=aaahhhhh" for 127.0.0.1 at 2014-10-27 13:55:30 -0700
+Processing by UsersController#index as XML
+  Parameters: {"some_category"=>{"a_key"=>"another value", "a_second_key"=>"yet another value", "inner_inner_hash"=>{"key"=>"value"}}, "something_else"=>"aaahhhhh"}
+Completed 500 Internal Server Error in 2ms
+
+NameError (undefined local variable or method `user' for #<UsersController:0x007f95fd9d3ee8>):
+  app/controllers/users_controller.rb:3:in `index'
+
+
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.5ms)
+
+
+Started GET "/users?some_category%5Ba_key%5D=another%20value&some_category%5Ba_second_key%5D=yet%20another%20value&some_category%5Binner_inner_hash%5D%5Bkey%5D=value&something_else=aaahhhhh" for 127.0.0.1 at 2014-10-27 13:57:08 -0700
+Processing by UsersController#index as XML
+  Parameters: {"some_category"=>{"a_key"=>"another value", "a_second_key"=>"yet another value", "inner_inner_hash"=>{"key"=>"value"}}, "something_else"=>"aaahhhhh"}
+Completed 200 OK in 0ms (Views: 0.1ms | ActiveRecord: 0.0ms)
+  [1m[36m (1.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateUsers (20141027205841)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (19.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20141027205841"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/users?some_category%5Ba_key%5D=another%20value&some_category%5Ba_second_key%5D=yet%20another%20value&some_category%5Binner_inner_hash%5D%5Bkey%5D=value&something_else=aaahhhhh" for 127.0.0.1 at 2014-10-27 14:09:24 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as XML
+  Parameters: {"some_category"=>{"a_key"=>"another value", "a_second_key"=>"yet another value", "inner_inner_hash"=>{"key"=>"value"}}, "something_else"=>"aaahhhhh"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+Completed 200 OK in 7ms (Views: 4.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users.json" for 127.0.0.1 at 2014-10-27 14:13:22 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"user"=>{"name"=>"Gizmo", "email"=>"gizmo@gizmo.gizmo"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", "2014-10-27 21:13:22.695766"], ["email", "gizmo@gizmo.gizmo"], ["name", "Gizmo"], ["updated_at", "2014-10-27 21:13:22.695766"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 84ms (Views: 0.4ms | ActiveRecord: 3.6ms)
+
+
+Started POST "/users.json" for 127.0.0.1 at 2014-10-27 14:15:43 -0700
+Processing by UsersController#create as JSON
+  Parameters: {"user"=>{"name"=>"Gizmo"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 422 Unprocessable Entity in 46ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/1.json" for 127.0.0.1 at 2014-10-27 14:20:11 -0700
+Processing by UsersController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1
+Completed 200 OK in 61ms (Views: 3.6ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/users/2.json" for 127.0.0.1 at 2014-10-27 14:26:39 -0700
+Processing by UsersController#destroy as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 2]]
+  [1m[35m (1.6ms)[0m  commit transaction
+Completed 200 OK in 10ms (Views: 3.8ms | ActiveRecord: 2.5ms)
+
+
+Started PATCH "/users/1.json" for 127.0.0.1 at 2014-10-27 14:33:41 -0700
+Processing by UsersController#update as JSON
+  Parameters: {"user"=>{"email"=>"jeff@new.com"}, "id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 5ms
+
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  app/controllers/users_controller.rb:29:in `update'
+
+
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (24.2ms)
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (42.1ms)
+
+
+Started PATCH "/users/1.json" for 127.0.0.1 at 2014-10-27 14:36:00 -0700
+Processing by UsersController#update as JSON
+  Parameters: {"user"=>{"email"=>"jeff@new.com"}, "id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "email" = ?, "updated_at" = ? WHERE "users"."id" = 1  [["email", "jeff@new.com"], ["updated_at", "2014-10-27 21:36:00.968767"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 11ms (Views: 0.5ms | ActiveRecord: 2.5ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to ChangeUsers (20141027214124)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "users" ADD "username" varchar(255)[0m
+  [1m[35m (1.0ms)[0m  CREATE TEMPORARY TABLE "ausers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "created_at" datetime, "updated_at" datetime, "username" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "users"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "ausers" ("id","name","email","created_at","updated_at","username") VALUES (1, 'jeff', 'jeff@new.com', NULL, '2014-10-27 21:36:00.968767', NULL)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "ausers" ("id","name","email","created_at","updated_at","username") VALUES (3, 'jim', 'j@me.com', NULL, NULL, NULL)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "ausers" ("id","name","email","created_at","updated_at","username") VALUES (4, 'Gizmo', 'gizmo@gizmo.gizmo', '2014-10-27 21:13:22.695766', '2014-10-27 21:13:22.695766', NULL)
+  [1m[36m (0.5ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255), "created_at" datetime, "updated_at" datetime, "username" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "ausers"[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "users" ("id","email","created_at","updated_at","username") VALUES (1, 'jeff@new.com', NULL, '2014-10-27 21:36:00.968767', NULL)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "users" ("id","email","created_at","updated_at","username") VALUES (3, 'j@me.com', NULL, NULL, NULL)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "users" ("id","email","created_at","updated_at","username") VALUES (4, 'gizmo@gizmo.gizmo', '2014-10-27 21:13:22.695766', '2014-10-27 21:13:22.695766', NULL)
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "ausers"[0m
+  [1m[35m (0.1ms)[0m  CREATE TEMPORARY TABLE "ausers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255), "created_at" datetime, "updated_at" datetime, "username" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "users"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "ausers" ("id","email","created_at","updated_at","username") VALUES (1, 'jeff@new.com', NULL, '2014-10-27 21:36:00.968767', NULL)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "ausers" ("id","email","created_at","updated_at","username") VALUES (3, 'j@me.com', NULL, NULL, NULL)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "ausers" ("id","email","created_at","updated_at","username") VALUES (4, 'gizmo@gizmo.gizmo', '2014-10-27 21:13:22.695766', '2014-10-27 21:13:22.695766', NULL)
+  [1m[36m (0.1ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime, "username" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1mSELECT * FROM "ausers"[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "users" ("id","created_at","updated_at","username") VALUES (1, NULL, '2014-10-27 21:36:00.968767', NULL)
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "users" ("id","created_at","updated_at","username") VALUES (3, NULL, NULL, NULL)[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "users" ("id","created_at","updated_at","username") VALUES (4, '2014-10-27 21:13:22.695766', '2014-10-27 21:13:22.695766', NULL)
+  [1m[36m (0.1ms)[0m  [1mDROP TABLE "ausers"[0m
+  [1m[35mSQL (2.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141027214124"]]
+  [1m[36m (53.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateContacts (20141027214947)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "contacts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "email" varchar(255), "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_contacts_on_user_id" ON "contacts" ("user_id")[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141027214947"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+Migrating to CreateContactShares (20141027215947)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "contact_shares" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "contact_id" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.5ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateContactShares (20141027215947)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "contact_shares" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "contact_id" integer, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.0ms)[0m  [1mCREATE UNIQUE INDEX "index_contact_shares_on_contact_id_and_user_id" ON "contact_shares" ("contact_id", "user_id")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_contact_shares_on_contact_id_and_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_contact_shares_on_contact_id_and_user_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_contact_shares_on_contact_id" ON "contact_shares" ("contact_id")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_contact_shares_on_contact_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_contact_shares_on_contact_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_contact_shares_on_contact_id_and_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_contact_shares_on_contact_id_and_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  CREATE  INDEX "index_contact_shares_on_user_id" ON "contact_shares" ("user_id")
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20141027215947"]]
+  [1m[35m (5.6ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_contact_shares_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_contact_shares_on_user_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_contact_shares_on_contact_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_contact_shares_on_contact_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_contact_shares_on_contact_id_and_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_contact_shares_on_contact_id_and_user_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_contacts_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_contacts_on_user_id' AND type='index'
+[0m
+  [1m[36mUser Load (2.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mSQL (1.8ms)[0m  DELETE FROM "users" WHERE "users"."id" = 1
+  [1m[36mSQL (6.2ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = 3[0m
+  [1m[35mSQL (112.4ms)[0m  DELETE FROM "users" WHERE "users"."id" = 4
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."username" = 'jeff' LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "users" ("created_at", "updated_at", "username") VALUES (?, ?, ?)  [["created_at", "2014-10-27 22:19:35.964678"], ["updated_at", "2014-10-27 22:19:35.964678"], ["username", "jeff"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."username" = 'asher' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "updated_at", "username") VALUES (?, ?, ?)  [["created_at", "2014-10-27 22:19:41.994382"], ["updated_at", "2014-10-27 22:19:41.994382"], ["username", "asher"]]
+  [1m[36m (2.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."username" = 'ned' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "updated_at", "username") VALUES (?, ?, ?)  [["created_at", "2014-10-27 22:19:46.289888"], ["updated_at", "2014-10-27 22:19:46.289888"], ["username", "ned"]]
+  [1m[36m (5.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."username" = 'cj' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "updated_at", "username") VALUES (?, ?, ?)  [["created_at", "2014-10-27 22:19:54.049477"], ["updated_at", "2014-10-27 22:19:54.049477"], ["username", "cj"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mContact Exists (0.2ms)[0m  SELECT  1 AS one FROM "contacts"  WHERE ("contacts"."email" = 'j@q.com' AND "contacts"."user_id" = 5) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "contacts" ("created_at", "email", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-10-27 22:22:47.010336"], ["email", "j@q.com"], ["name", "Jeff"], ["updated_at", "2014-10-27 22:22:47.010336"], ["user_id", 5]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mContact Exists (0.2ms)[0m  SELECT  1 AS one FROM "contacts"  WHERE ("contacts"."email" = 'e@q.com' AND "contacts"."user_id" = 5) LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "contacts" ("created_at", "email", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-10-27 22:22:57.087845"], ["email", "e@q.com"], ["name", "Jeff"], ["updated_at", "2014-10-27 22:22:57.087845"], ["user_id", 5]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mContact Exists (0.2ms)[0m  SELECT  1 AS one FROM "contacts"  WHERE ("contacts"."email" = 'e2@q.com' AND "contacts"."user_id" = 5) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contacts" ("created_at", "email", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-10-27 22:23:03.374790"], ["email", "e2@q.com"], ["name", "Jeff"], ["updated_at", "2014-10-27 22:23:03.374790"], ["user_id", 5]]
+  [1m[35m (3.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mContact Exists (0.2ms)[0m  SELECT  1 AS one FROM "contacts"  WHERE ("contacts"."email" = 'e2@q.com' AND "contacts"."user_id" = 5) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[36mContact Load (2.0ms)[0m  [1mSELECT "contacts".* FROM "contacts"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mContactShare Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "contact_shares"  WHERE ("contact_shares"."contact_id" = 1 AND "contact_shares"."user_id" = 5) LIMIT 1[0m
+  [1m[35mContactShare Exists (0.1ms)[0m  SELECT  1 AS one FROM "contact_shares"  WHERE ("contact_shares"."user_id" = 5 AND "contact_shares"."contact_id" = 1) LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "contact_shares" ("contact_id", "created_at", "updated_at", "user_id") VALUES (?, ?, ?, ?)[0m  [["contact_id", 1], ["created_at", "2014-10-27 22:25:24.700458"], ["updated_at", "2014-10-27 22:25:24.700458"], ["user_id", 5]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36mContactShare Load (0.3ms)[0m  [1mSELECT  "contact_shares".* FROM "contact_shares"   ORDER BY "contact_shares"."id" ASC LIMIT 1[0m
+  [1m[35mContact Load (0.2ms)[0m  SELECT  "contacts".* FROM "contacts"  WHERE "contacts"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT  "contacts".* FROM "contacts"   ORDER BY "contacts"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" INNER JOIN "contact_shares" ON "users"."id" = "contact_shares"."user_id" WHERE "contact_shares"."contact_id" = ?  [["contact_id", 1]]
+
+
+Started PATCH "/contacts.json" for 127.0.0.1 at 2014-10-27 16:15:56 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [PATCH] "/contacts.json"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.6ms)
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (58.2ms)
+
+
+Started PATCH "/contacts" for 127.0.0.1 at 2014-10-27 16:16:23 -0700
+
+ActionController::RoutingError (No route matches [PATCH] "/contacts"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (18.6ms)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-27 16:17:37 -0700
+Processing by ContactsController#create as XML
+  Parameters: {"contact"=>{"name"=>"jeffrey", "email"=>"jeff@new.com", "user_id"=>"5"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mContact Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "contacts"  WHERE ("contacts"."email" = 'jeff@new.com' AND "contacts"."user_id" = 5) LIMIT 1[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "contacts" ("created_at", "email", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-10-27 23:17:37.511323"], ["email", "jeff@new.com"], ["name", "jeffrey"], ["updated_at", "2014-10-27 23:17:37.511323"], ["user_id", 5]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 74ms (Views: 0.4ms | ActiveRecord: 3.2ms)
+
+
+Started PATCH "/contacts/4" for 127.0.0.1 at 2014-10-27 16:18:59 -0700
+Processing by ContactsController#update as XML
+  Parameters: {"contact"=>{"email"=>"j@new.com"}, "id"=>"4"}
+  [1m[35mContact Load (0.3ms)[0m  SELECT  "contacts".* FROM "contacts"  WHERE "contacts"."id" = 4 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mContact Exists (0.2ms)[0m  SELECT  1 AS one FROM "contacts"  WHERE ("contacts"."email" = 'j@new.com' AND "contacts"."id" != 4 AND "contacts"."user_id" = 5) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "contacts" SET "email" = ?, "updated_at" = ? WHERE "contacts"."id" = 4[0m  [["email", "j@new.com"], ["updated_at", "2014-10-27 23:18:59.394998"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Completed 200 OK in 104ms (Views: 0.5ms | ActiveRecord: 1.8ms)
+
+
+Started DELETE "/contacts/4" for 127.0.0.1 at 2014-10-27 16:19:42 -0700
+Processing by ContactsController#destroy as XML
+  Parameters: {"id"=>"4"}
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  WHERE "contacts"."id" = 4 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 500 Internal Server Error in 59ms
+
+NameError (uninitialized constant Contact::Share):
+  app/controllers/contacts_controller.rb:40:in `destroy'
+
+
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.5ms)
+
+
+Started DELETE "/contacts/4" for 127.0.0.1 at 2014-10-27 16:22:19 -0700
+Processing by ContactsController#destroy as XML
+  Parameters: {"id"=>"4"}
+  [1m[35mContact Load (0.2ms)[0m  SELECT  "contacts".* FROM "contacts"  WHERE "contacts"."id" = 4 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "contacts" WHERE "contacts"."id" = ?  [["id", 4]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 16ms (Views: 4.7ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-27 16:26:10 -0700
+Processing by ContactsController#create as XML
+  Parameters: {"contact"=>{"name"=>"jeffrey", "email"=>"jeff@new.com", "user_id"=>"5"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mContact Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "contacts"  WHERE ("contacts"."email" = 'jeff@new.com' AND "contacts"."user_id" = 5) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "contacts" ("created_at", "email", "name", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", "2014-10-27 23:26:10.381195"], ["email", "jeff@new.com"], ["name", "jeffrey"], ["updated_at", "2014-10-27 23:26:10.381195"], ["user_id", 5]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 16ms (Views: 0.4ms | ActiveRecord: 2.6ms)
+
+
+Started DELETE "/contacts/4" for 127.0.0.1 at 2014-10-27 16:26:20 -0700
+Processing by ContactsController#destroy as XML
+  Parameters: {"id"=>"4"}
+  [1m[35mContact Load (0.2ms)[0m  SELECT  "contacts".* FROM "contacts"  WHERE "contacts"."id" = 4 LIMIT 1
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (undefined method `destroy' for nil:NilClass):
+  app/controllers/contacts_controller.rb:40:in `destroy'
+
+
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.1ms)
+
+
+Started DELETE "/contacts/4" for 127.0.0.1 at 2014-10-27 16:33:41 -0700
+Processing by ContactsController#destroy as XML
+  Parameters: {"id"=>"4"}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  WHERE "contacts"."id" = 4 LIMIT 1[0m
+Completed 500 Internal Server Error in 8ms
+
+NoMethodError (undefined method `destroy' for nil:NilClass):
+  app/controllers/contacts_controller.rb:40:in `destroy'
+
+
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.0ms)
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", 4]]
+
+
+Started DELETE "/contacts/4" for 127.0.0.1 at 2014-10-27 16:34:54 -0700
+Processing by ContactsController#destroy as XML
+  Parameters: {"id"=>"4"}
+  [1m[35mContact Load (0.1ms)[0m  SELECT  "contacts".* FROM "contacts"  WHERE "contacts"."id" = 4 LIMIT 1
+Completed 200 OK in 6ms (Views: 0.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2014-10-27 16:35:20 -0700
+Processing by ContactsController#create as XML
+  Parameters: {"contact"=>{"name"=>"jeffrey", "email"=>"jeff@new.com", "user_id"=>"5"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mContact Exists (0.2ms)[0m  SELECT  1 AS one FROM "contacts"  WHERE ("contacts"."email" = 'jeff@new.com' AND "contacts"."user_id" = 5) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 422 Unprocessable Entity in 12ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+  [1m[36mContact Load (2.3ms)[0m  [1mSELECT "contacts".* FROM "contacts"[0m
+
+
+Started DELETE "/contacts/5" for 127.0.0.1 at 2014-10-27 16:36:39 -0700
+Processing by ContactsController#destroy as XML
+  Parameters: {"id"=>"5"}
+  [1m[35mContact Load (0.2ms)[0m  SELECT  "contacts".* FROM "contacts"  WHERE "contacts"."id" = 5 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mContactShare Load (0.2ms)[0m  SELECT "contact_shares".* FROM "contact_shares"  WHERE "contact_shares"."contact_id" = ?  [["contact_id", 5]]
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "contacts" WHERE "contacts"."id" = ?[0m  [["id", 5]]
+  [1m[35m (1.1ms)[0m  commit transaction
+Completed 200 OK in 49ms (Views: 0.6ms | ActiveRecord: 2.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateComments (20141027234905)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "content" text, "commentable_id" integer, "commentable_type" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (1.8ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141027234905"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_contact_shares_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_contact_shares_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_contact_shares_on_contact_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_contact_shares_on_contact_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_contact_shares_on_contact_id_and_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_contact_shares_on_contact_id_and_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_contacts_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_contacts_on_user_id' AND type='index'
+
+
+
+Started POST "/comments" for 127.0.0.1 at 2014-10-27 17:12:42 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [POST] "/comments"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (33.9ms)
+
+
+Started POST "/user/5/comments" for 127.0.0.1 at 2014-10-27 17:14:57 -0700
+
+ActionController::RoutingError (No route matches [POST] "/user/5/comments"):
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.3ms)
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (32.9ms)
+
+
+Started POST "/users/5/comments" for 127.0.0.1 at 2014-10-27 17:15:17 -0700
+Processing by CommentsController#create as XML
+  Parameters: {"comment"=>{"content"=>"jeffrey is coolest", "commentable_id"=>"5", "commentable_type"=>"User"}, "user_id"=>"5"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "comments" ("commentable_id", "commentable_type", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["commentable_id", 5], ["commentable_type", "User"], ["content", "jeffrey is coolest"], ["created_at", "2014-10-28 00:15:17.490480"], ["updated_at", "2014-10-28 00:15:17.490480"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+Completed 200 OK in 11ms (Views: 0.4ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/users/5/comments" for 127.0.0.1 at 2014-10-27 17:24:08 -0700
+
+SyntaxError (/Users/appacademy/WeekFourDayOne/app/controllers/comments_controller.rb:71: syntax error, unexpected $end, expecting keyword_end):
+  activesupport (4.1.1) lib/active_support/dependencies.rb:443:in `load'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:443:in `block in load_file'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:633:in `new_constants_in'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:442:in `load_file'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:342:in `require_or_load'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:480:in `load_missing_constant'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:180:in `const_missing'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:238:in `const_get'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:238:in `block in constantize'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:236:in `each'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:236:in `inject'
+  activesupport (4.1.1) lib/active_support/inflector/methods.rb:236:in `constantize'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:552:in `get'
+  activesupport (4.1.1) lib/active_support/dependencies.rb:583:in `constantize'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.1) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.1) lib/action_dispatch/routing/route_set.rb:676:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.1) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.1) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.1) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.1) lib/rails/engine.rb:514:in `call'
+  railties (4.1.1) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (17.3ms)
+
+
+Started POST "/users/5/comments" for 127.0.0.1 at 2014-10-27 17:25:12 -0700
+Processing by CommentsController#create as XML
+  Parameters: {"comment"=>{"content"=>"jeffrey is coolest"}, "user_id"=>"5"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "comments" ("commentable_id", "commentable_type", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["commentable_id", 5], ["commentable_type", "User"], ["content", "jeffrey is coolest"], ["created_at", "2014-10-28 00:25:12.158564"], ["updated_at", "2014-10-28 00:25:12.158564"]]
+  [1m[36m (6.0ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 16ms (Views: 0.7ms | ActiveRecord: 6.8ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddLikesToContacts (20141028002944)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "contacts" ADD "favorites" boolean[0m
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141028002944"]]
+  [1m[36m (5.9ms)[0m  [1mcommit transaction[0m
+Migrating to AddLikesToContactShares (20141028002954)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "contact_shares" ADD "favorites" boolean[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141028002954"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_contact_shares_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_contact_shares_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_contact_shares_on_contact_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_contact_shares_on_contact_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_contact_shares_on_contact_id_and_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_contact_shares_on_contact_id_and_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_contacts_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_contacts_on_user_id' AND type='index'
+
+  [1m[35mContact Load (0.7ms)[0m  SELECT "contacts".* FROM "contacts"
+
+
+Started PATCH "/contacts/1/favorite" for 127.0.0.1 at 2014-10-27 17:46:03 -0700
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by ContactsController#favorite as XML
+  Parameters: {"comment"=>{"favorite"=>"true"}, "id"=>"1"}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  WHERE "contacts"."id" = 1 LIMIT 1[0m
+Completed 500 Internal Server Error in 7ms
+
+ActiveModel::MissingAttributeError (can't write unknown attribute `favorite'):
+  app/controllers/contacts_controller.rb:46:in `favorite'
+
+
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (66.0ms)
+
+
+Started PATCH "/contacts/1/favorite" for 127.0.0.1 at 2014-10-27 17:48:00 -0700
+Processing by ContactsController#favorite as XML
+  Parameters: {"contact"=>{"favorite"=>"true"}, "id"=>"1"}
+  [1m[35mContact Load (0.2ms)[0m  SELECT  "contacts".* FROM "contacts"  WHERE "contacts"."id" = 1 LIMIT 1
+Completed 500 Internal Server Error in 2ms
+
+ActiveModel::MissingAttributeError (can't write unknown attribute `favorite'):
+  app/controllers/contacts_controller.rb:46:in `favorite'
+
+
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.5ms)
+
+
+Started PATCH "/contacts/1/favorite" for 127.0.0.1 at 2014-10-27 17:49:51 -0700
+Processing by ContactsController#favorite as XML
+  Parameters: {"contact"=>{"favorite"=>"true"}, "id"=>"1"}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  WHERE "contacts"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mContact Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "contacts"  WHERE ("contacts"."email" = 'j@q.com' AND "contacts"."id" != 1 AND "contacts"."user_id" = 5) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Completed 200 OK in 14ms (Views: 0.5ms | ActiveRecord: 0.8ms)
+
+
+Started PATCH "/contacts/1/favorite" for 127.0.0.1 at 2014-10-27 17:50:01 -0700
+Processing by ContactsController#favorite as XML
+  Parameters: {"contact"=>{"favorite"=>"true"}, "id"=>"1"}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  WHERE "contacts"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mContact Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "contacts"  WHERE ("contacts"."email" = 'j@q.com' AND "contacts"."id" != 1 AND "contacts"."user_id" = 5) LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/contacts/1/favorite" for 127.0.0.1 at 2014-10-27 17:50:03 -0700
+Processing by ContactsController#favorite as XML
+  Parameters: {"contact"=>{"favorite"=>"true"}, "id"=>"1"}
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  WHERE "contacts"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mContact Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "contacts"  WHERE ("contacts"."email" = 'j@q.com' AND "contacts"."id" != 1 AND "contacts"."user_id" = 5) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/contacts/1/favorite" for 127.0.0.1 at 2014-10-27 17:50:04 -0700
+Processing by ContactsController#favorite as XML
+  Parameters: {"contact"=>{"favorite"=>"true"}, "id"=>"1"}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  WHERE "contacts"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mContact Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "contacts"  WHERE ("contacts"."email" = 'j@q.com' AND "contacts"."id" != 1 AND "contacts"."user_id" = 5) LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/contacts/1/favorite" for 127.0.0.1 at 2014-10-27 17:50:05 -0700
+Processing by ContactsController#favorite as XML
+  Parameters: {"contact"=>{"favorite"=>"true"}, "id"=>"1"}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  WHERE "contacts"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mContact Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "contacts"  WHERE ("contacts"."email" = 'j@q.com' AND "contacts"."id" != 1 AND "contacts"."user_id" = 5) LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/contacts/1/favorite" for 127.0.0.1 at 2014-10-27 17:50:06 -0700
+Processing by ContactsController#favorite as XML
+  Parameters: {"contact"=>{"favorite"=>"true"}, "id"=>"1"}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  WHERE "contacts"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mContact Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "contacts"  WHERE ("contacts"."email" = 'j@q.com' AND "contacts"."id" != 1 AND "contacts"."user_id" = 5) LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/contacts/1/favorite" for 127.0.0.1 at 2014-10-27 17:50:32 -0700
+Processing by ContactsController#favorite as XML
+  Parameters: {"contact"=>{"favorite"=>"true"}, "id"=>"1"}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  WHERE "contacts"."id" = 1 LIMIT 1[0m
+Completed 500 Internal Server Error in 6ms
+
+ActiveModel::MissingAttributeError (can't write unknown attribute `favorite'):
+  app/controllers/contacts_controller.rb:49:in `favorite'
+
+
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (13.8ms)
+
+
+Started PATCH "/contacts/1/favorite" for 127.0.0.1 at 2014-10-27 17:54:16 -0700
+Processing by ContactsController#favorite as XML
+  Parameters: {"contact"=>{"favorite"=>"true"}, "id"=>"1"}
+  [1m[35mContact Load (0.1ms)[0m  SELECT  "contacts".* FROM "contacts"  WHERE "contacts"."id" = 1 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 13ms
+
+ActiveRecord::UnknownAttributeError (unknown attribute: favorite):
+  app/controllers/contacts_controller.rb:46:in `favorite'
+
+
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/appacademy/.rbenv/versions/1.9.3-p545/lib/ruby/gems/1.9.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.7ms)
+
+
+Started PATCH "/contacts/1/favorite" for 127.0.0.1 at 2014-10-27 17:57:26 -0700
+Processing by ContactsController#favorite as XML
+  Parameters: {"contact"=>{"favorite"=>"true"}, "id"=>"1"}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  WHERE "contacts"."id" = 1 LIMIT 1[0m
+Unpermitted parameters: favorite
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mContact Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "contacts"  WHERE ("contacts"."email" = 'j@q.com' AND "contacts"."id" != 1 AND "contacts"."user_id" = 5) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Completed 200 OK in 14ms (Views: 0.5ms | ActiveRecord: 0.9ms)
+
+
+Started PATCH "/contacts/1/favorite" for 127.0.0.1 at 2014-10-27 17:57:30 -0700
+Processing by ContactsController#favorite as XML
+  Parameters: {"contact"=>{"favorite"=>"true"}, "id"=>"1"}
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  WHERE "contacts"."id" = 1 LIMIT 1[0m
+Unpermitted parameters: favorite
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mContact Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "contacts"  WHERE ("contacts"."email" = 'j@q.com' AND "contacts"."id" != 1 AND "contacts"."user_id" = 5) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/contacts/1/favorite" for 127.0.0.1 at 2014-10-27 17:57:58 -0700
+Processing by ContactsController#favorite as XML
+  Parameters: {"contact"=>{"favorites"=>"true"}, "id"=>"1"}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  WHERE "contacts"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mContact Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "contacts"  WHERE ("contacts"."email" = 'j@q.com' AND "contacts"."id" != 1 AND "contacts"."user_id" = 5) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "contacts" SET "favorites" = ?, "updated_at" = ? WHERE "contacts"."id" = 1  [["favorites", "t"], ["updated_at", "2014-10-28 00:57:58.618355"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 2.2ms)
+
+
+Started PATCH "/contacts/1/favorite" for 127.0.0.1 at 2014-10-27 17:58:21 -0700
+Processing by ContactsController#favorite as XML
+  Parameters: {"contact"=>{"favorites"=>"false"}, "id"=>"1"}
+  [1m[35mContact Load (0.2ms)[0m  SELECT  "contacts".* FROM "contacts"  WHERE "contacts"."id" = 1 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mContact Exists (0.1ms)[0m  SELECT  1 AS one FROM "contacts"  WHERE ("contacts"."email" = 'j@q.com' AND "contacts"."id" != 1 AND "contacts"."user_id" = 5) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "contacts" SET "favorites" = ?, "updated_at" = ? WHERE "contacts"."id" = 1[0m  [["favorites", "f"], ["updated_at", "2014-10-28 00:58:21.986919"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 2.3ms)
+
+
+Started PATCH "/contacts/1/favorite" for 127.0.0.1 at 2014-10-27 18:00:22 -0700
+Processing by ContactsController#favorite as XML
+  Parameters: {"nothing"=>nil, "id"=>"1"}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  WHERE "contacts"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mContact Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "contacts"  WHERE ("contacts"."email" = 'j@q.com' AND "contacts"."id" != 1 AND "contacts"."user_id" = 5) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "contacts" SET "favorites" = ?, "updated_at" = ? WHERE "contacts"."id" = 1  [["favorites", "t"], ["updated_at", "2014-10-28 01:00:22.340198"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 18ms (Views: 0.8ms | ActiveRecord: 2.8ms)
+
+
+Started PATCH "/contacts/1/favorite" for 127.0.0.1 at 2014-10-27 18:00:23 -0700
+Processing by ContactsController#favorite as XML
+  Parameters: {"nothing"=>nil, "id"=>"1"}
+  [1m[35mContact Load (0.2ms)[0m  SELECT  "contacts".* FROM "contacts"  WHERE "contacts"."id" = 1 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mContact Exists (0.1ms)[0m  SELECT  1 AS one FROM "contacts"  WHERE ("contacts"."email" = 'j@q.com' AND "contacts"."id" != 1 AND "contacts"."user_id" = 5) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "contacts" SET "favorites" = ?, "updated_at" = ? WHERE "contacts"."id" = 1[0m  [["favorites", "f"], ["updated_at", "2014-10-28 01:00:23.529228"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 2.1ms)
+
+
+Started PATCH "/contacts/1/favorite" for 127.0.0.1 at 2014-10-27 18:00:24 -0700
+Processing by ContactsController#favorite as XML
+  Parameters: {"nothing"=>nil, "id"=>"1"}
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  WHERE "contacts"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mContact Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "contacts"  WHERE ("contacts"."email" = 'j@q.com' AND "contacts"."id" != 1 AND "contacts"."user_id" = 5) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "contacts" SET "favorites" = ?, "updated_at" = ? WHERE "contacts"."id" = 1  [["favorites", "t"], ["updated_at", "2014-10-28 01:00:24.609857"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 2.2ms)
+
+
+Started PATCH "/contacts/1/favorite" for 127.0.0.1 at 2014-10-27 18:00:25 -0700
+Processing by ContactsController#favorite as XML
+  Parameters: {"nothing"=>nil, "id"=>"1"}
+  [1m[35mContact Load (0.2ms)[0m  SELECT  "contacts".* FROM "contacts"  WHERE "contacts"."id" = 1 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mContact Exists (0.1ms)[0m  SELECT  1 AS one FROM "contacts"  WHERE ("contacts"."email" = 'j@q.com' AND "contacts"."id" != 1 AND "contacts"."user_id" = 5) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "contacts" SET "favorites" = ?, "updated_at" = ? WHERE "contacts"."id" = 1[0m  [["favorites", "f"], ["updated_at", "2014-10-28 01:00:25.632109"]]
+  [1m[35m (1.8ms)[0m  commit transaction
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 2.3ms)
+
+
+Started PATCH "/contacts/1/favorite" for 127.0.0.1 at 2014-10-27 18:00:26 -0700
+Processing by ContactsController#favorite as XML
+  Parameters: {"nothing"=>nil, "id"=>"1"}
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  WHERE "contacts"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mContact Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "contacts"  WHERE ("contacts"."email" = 'j@q.com' AND "contacts"."id" != 1 AND "contacts"."user_id" = 5) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "contacts" SET "favorites" = ?, "updated_at" = ? WHERE "contacts"."id" = 1  [["favorites", "t"], ["updated_at", "2014-10-28 01:00:26.660863"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 2.0ms)
+
+
+Started PATCH "/contacts/1/favorite" for 127.0.0.1 at 2014-10-27 18:00:27 -0700
+Processing by ContactsController#favorite as XML
+  Parameters: {"nothing"=>nil, "id"=>"1"}
+  [1m[35mContact Load (0.2ms)[0m  SELECT  "contacts".* FROM "contacts"  WHERE "contacts"."id" = 1 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mContact Exists (0.1ms)[0m  SELECT  1 AS one FROM "contacts"  WHERE ("contacts"."email" = 'j@q.com' AND "contacts"."id" != 1 AND "contacts"."user_id" = 5) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "contacts" SET "favorites" = ?, "updated_at" = ? WHERE "contacts"."id" = 1[0m  [["favorites", "f"], ["updated_at", "2014-10-28 01:00:27.614419"]]
+  [1m[35m (1.6ms)[0m  commit transaction
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 2.1ms)
+
+
+Started PATCH "/contacts/1/favorite" for 127.0.0.1 at 2014-10-27 18:00:28 -0700
+Processing by ContactsController#favorite as XML
+  Parameters: {"nothing"=>nil, "id"=>"1"}
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT  "contacts".* FROM "contacts"  WHERE "contacts"."id" = 1 LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mContact Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "contacts"  WHERE ("contacts"."email" = 'j@q.com' AND "contacts"."id" != 1 AND "contacts"."user_id" = 5) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "contacts" SET "favorites" = ?, "updated_at" = ? WHERE "contacts"."id" = 1  [["favorites", "t"], ["updated_at", "2014-10-28 01:00:28.566364"]]
+  [1m[36m (5.6ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 6.1ms)
