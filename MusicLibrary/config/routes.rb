@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  resources :tracks
+
+  resources :albums
+
+  resources :bands
+
   root "sessions#new"
   resources :users, only: [:create, :new, :show]
   resource :session, only: [:create, :new, :destroy] 
