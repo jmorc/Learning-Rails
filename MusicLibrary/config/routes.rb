@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  
+  resources :notes
+
   resources :tracks, except: [:new, :index]
 
   resources :albums, except: [:new, :index] do

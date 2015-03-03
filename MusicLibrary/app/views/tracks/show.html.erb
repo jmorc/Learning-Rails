@@ -15,6 +15,12 @@
   <%= @track.lyrics %>
 </p>
 
+<p>
+  <strong>Add a note:</strong>
+  <%= render 'notes/form' %>
+</p>
+
+
 <%= link_to 'Edit', edit_track_url(@track) %> |
 <%= link_to 'Delete this track', track_url(@track), method: :delete %> |
 <%= link_to 'Back to album: ' + @track.album.name, @track.album %>
