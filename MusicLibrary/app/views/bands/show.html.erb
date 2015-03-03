@@ -1,9 +1,18 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+  <strong>Band Name:</strong>
   <%= @band.name %>
 </p>
 
-<%= link_to 'Edit', edit_band_path(@band) %> |
-<%= link_to 'Back', bands_path %>
+<p><strong>Albums:</strong></p>
+<ul>
+  <% @band.albums.each do |album| %>
+    <li><%= link_to album.name, album_url(album) %></li>
+  <% end %>
+</ul>
+
+<%= link_to 'Add an album', new_band_album_url(@band) %><br>
+<%= link_to 'Edit this band', edit_band_url(@band) %><br>
+<%= link_to 'Delete this band', band_url(@band), method: :delete %><br>
+<%= link_to 'See all bands', bands_url %>
