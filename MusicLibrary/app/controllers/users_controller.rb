@@ -15,7 +15,7 @@ class UsersController < ApplicationController
     respond_to do |format|
       if @user.save
         log_in_user(@user)
-        format.html { redirect_to @user, notice: 'User was successfully created.' }
+        format.html { redirect_to bands_url, notice: 'User was successfully created.' }
       else
         flash[:errors] = @user.errors.full_messages
         format.html { render :new }
