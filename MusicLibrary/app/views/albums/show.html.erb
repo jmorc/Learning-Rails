@@ -10,5 +10,16 @@
   <%= @album.live %>
 </p>
 
+<p>
+  <strong>Year:</strong>
+  <%= @album.year %>
+</p>
+
+<p>
+  <strong>Band:</strong>
+  <%= @album.band.name %>
+</p>
+
 <%= link_to 'Edit', edit_album_path(@album) %> |
-<%= link_to 'Back', albums_path %>
+<%= link_to 'See all ' + @album.band.name + " albums", 
+            band_url(@album.band) %>

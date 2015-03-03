@@ -1,6 +1,7 @@
 class AlbumsController < ApplicationController
 
   def show
+    @album = Album.find(params[:id])
   end
 
   def new
@@ -9,6 +10,8 @@ class AlbumsController < ApplicationController
   end
 
   def edit
+    @album = Album.find(params[:id])
+    @band = @album.band
   end
 
   def create
@@ -26,9 +29,8 @@ class AlbumsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /albums/1
-  # PATCH/PUT /albums/1.json
   def update
+    @album = Album.find(params[:id])
     respond_to do |format|
       if @album.update(album_params)
         format.html { redirect_to @album, notice: 'Album was successfully updated.' }
