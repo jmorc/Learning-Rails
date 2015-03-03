@@ -14,7 +14,7 @@ class TracksController < ApplicationController
   end
 
   def edit
-    @album = Album.find(params[:album_id])
+    @album = @track.album
   end
 
   def create
@@ -47,7 +47,7 @@ class TracksController < ApplicationController
   def destroy
     @track.destroy
     respond_to do |format|
-      format.html { redirect_to tracks_url, notice: 'Track was successfully destroyed.' }
+      format.html { redirect_to @track.album, notice: 'Track was successfully destroyed.' }
       format.json { head :no_content }
     end
   end

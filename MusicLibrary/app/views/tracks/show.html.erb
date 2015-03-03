@@ -10,5 +10,11 @@
   <%= @track.bonus %>
 </p>
 
-<%= link_to 'Edit', edit_track_path(@track) %> |
-<%= link_to 'Back', tracks_path %>
+<p>
+  <strong>Lyrics:</strong>
+  <%= @track.lyrics %>
+</p>
+
+<%= link_to 'Edit', edit_track_url(@track) %> |
+<%= link_to 'Delete this track', track_url(@track), method: :delete %> |
+<%= link_to 'Back to album: ' + @track.album.name, @track.album %>
