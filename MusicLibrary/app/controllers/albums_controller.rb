@@ -1,30 +1,19 @@
 class AlbumsController < ApplicationController
-  before_action :set_album, only: [:show, :edit, :update, :destroy]
 
-  # GET /albums
-  # GET /albums.json
-  def index
-    @albums = Album.all
-  end
-
-  # GET /albums/1
-  # GET /albums/1.json
   def show
   end
 
-  # GET /albums/new
   def new
+    @band = Band.find(params[:band_id])
     @album = Album.new
   end
 
-  # GET /albums/1/edit
   def edit
   end
 
-  # POST /albums
-  # POST /albums.json
   def create
-    @album = Album.new(album_params)
+    band = Band.find(params[:album][:band_id])
+    @album = band.albums.new(album_params)
 
     respond_to do |format|
       if @album.save
@@ -69,6 +58,6 @@ class AlbumsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def album_params
-      params.require(:album).permit(:name, :live)
+      params.require(:album).permit(:name, :live, :year)
     end
 end
