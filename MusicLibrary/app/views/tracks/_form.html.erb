@@ -19,6 +19,13 @@
     <%= f.label :bonus %><br>
     <%= f.check_box :bonus %>
   </div>
+  <div class="field">
+    <%= f.label :lyrics %><br>
+    <%= f.text_field :lyrics %>
+  </div>
+  <div class="field">
+    <%= f.hidden_field :album_id, value: @album.id %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>

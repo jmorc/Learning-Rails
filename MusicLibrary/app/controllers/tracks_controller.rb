@@ -1,30 +1,25 @@
 class TracksController < ApplicationController
   before_action :set_track, only: [:show, :edit, :update, :destroy]
 
-  # GET /tracks
-  # GET /tracks.json
   def index
     @tracks = Track.all
   end
 
-  # GET /tracks/1
-  # GET /tracks/1.json
   def show
   end
 
-  # GET /tracks/new
   def new
+    @album = Album.find(params[:album_id])
     @track = Track.new
   end
 
-  # GET /tracks/1/edit
   def edit
+    @album = Album.find(params[:album_id])
   end
 
-  # POST /tracks
-  # POST /tracks.json
   def create
-    @track = Track.new(track_params)
+    @album = Album.find(params[:track][:album_id])
+    @track = @album.tracks.new(track_params)
 
     respond_to do |format|
       if @track.save
@@ -37,8 +32,6 @@ class TracksController < ApplicationController
     end
   end
 
-  # PATCH/PUT /tracks/1
-  # PATCH/PUT /tracks/1.json
   def update
     respond_to do |format|
       if @track.update(track_params)
@@ -51,8 +44,6 @@ class TracksController < ApplicationController
     end
   end
 
-  # DELETE /tracks/1
-  # DELETE /tracks/1.json
   def destroy
     @track.destroy
     respond_to do |format|
@@ -69,6 +60,6 @@ class TracksController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def track_params
-      params.require(:track).permit(:name, :bonus)
+      params.require(:track).permit(:name, :bonus, :lyrics)
     end
 end

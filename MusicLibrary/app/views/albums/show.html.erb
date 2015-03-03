@@ -20,6 +20,16 @@
   <%= @album.band.name %>
 </p>
 
-<%= link_to 'Edit', edit_album_path(@album) %> |
-<%= link_to 'See all ' + @album.band.name + " albums", 
-            band_url(@album.band) %>
+<p>
+  <strong>Tracks:</strong>
+  <ul>
+    <% @album.tracks.each do |track| %>
+      <li><%= link_to track.name, track_url(track) %></li>
+    <% end %>
+  </ul>
+</p>
+
+<%= link_to 'Add a track', new_album_track_url(@album) %><br>
+<%= link_to 'Edit this album', edit_album_url(@album) %><br>
+<%= link_to 'Delete this album', album_url(@album), method: :delete %><br>
+<%= link_to 'See all albums from ' + @album.band.name, band_url(@album.band) %>
